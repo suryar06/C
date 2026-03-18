@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to CPlusPlus.com</title>
+  <link rel="stylesheet" href="style.css" /><script src="script.js"></script>
+
+  <script>
+    function display(sectionId) {
+      document.querySelectorAll('div[id^="section"]').forEach(div => {
+        div.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+  <style>
+    #sectionHome {
+      display: block;
+    }
+    #sectionr {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Home Section -->
+  <div id="sectionHome">
+    <h1>Welcome to CPlusPlus.com</h1>
+    <nav>
+      <ul>
+        <li><a onclick="display('sectionr')">References</a></li>
+        <li><a onclick="display('sectionst')">Structure of a Program</a></li>
+        <li><a onclick="display('sectionArticles')">Articles</a></li>
+        <li><a onclick="display('sectionf')">Forums</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h2  class="a">Master C++ with the Best Resources!</h2>
+      <p>Learn C++ with high-quality tutorials, references, and community support.</p>
+      <a href="https://cplusplus.com/" class="btn">Get Started</a>
+    </div>
+    <div class="features">
+      <div class="feature" onclick="display('sectionr')">
+        <h3>📚 References</h3>
+        <p>Complete C++ reference guide covering all functions and libraries.</p>
+      </div>
+      <div class="feature" onclick="display('sectionst')">
+        <h3>📑 Structure of a Program</h3>
+        <p>Understand the fundamental structure of a C++ program.</p>
+      </div>
+      <div class="feature" onclick="display('sectionArticles')">
+        <h3>📝 Articles</h3>
+        <p>Read expert articles on advanced C++ topics.</p>
+      </div>
+      <div class="feature" onclick="display('sectionf')">
+        <h3>💬 Forums</h3>
+        <p>Join the community and discuss C++ programming with others.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- References Section -->
+  <div id="sectionr">
+    <h1>Standard C++ Headers</h1>
+    <h2>Environment</h2>
+    <ul>
+      <li>&lt;cfloat&gt; - Characteristics of floating-point types</li>
+      <li>&lt;cinttypes&gt; - C integer types</li>
+      <li>&lt;climits&gt; - Sizes of integral types</li>
+      <li>&lt;cstring&gt; - C Strings</li>
+      <li>&lt;ctime&gt; - C Time Library</li>
+    </ul>
+    <button onclick="display('sectionHome')">Back to Home</button>
+  </div>
+    <div id="sectionst">
+    <h1>Structure of a C++ Program</h1>
+    <p>A C++ program typically consists of the following components:</p>
+    
+    <div class="structure-block">
+      <h3>1. Preprocessor Directives</h3>
+      <p>These include libraries like <code>#include &lt;iostream&gt;</code> which are necessary for input and output operations.</p>
+    </div>
+
+    <div class="structure-block">
+      <h3>2. Namespace Declaration</h3>
+      <p><code>using namespace std;</code> allows you to use standard C++ functions without prefixing them with <code>std::</code>.</p>
+    </div>
+
+    <div class="structure-block">
+      <h3>3. Main Function</h3>
+      <p>The <code>main()</code> function is the entry point of any C++ program. It contains the actual code to be executed.</p>
+    </div>
+
+    <div class="structure-block">
+      <h3>4. Statements and Expressions</h3>
+      <p>C++ statements perform actions like variable declarations, input/output operations, and calculations.</p>
+    </div>
+
+    <div class="structure-block">
+      <h3>5. Return Statement</h3>
+      <p>The <code>return 0;</code> statement indicates that the program executed successfully.</p>
+    </div>
+
+    <button onclick="display('sectionHome')">Back to Home</button>
+  </div>
+  <div id="sectionArticles">
+    <h1>Articles</h1>
+
+    <div class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Algorithms</a></li>
+        <li><a href="#">C++ 11</a></li>
+        <li><a href="#">Graphics and Multimedia</a></li>
+        <li><a href="#">How-To</a></li>
+        <li><a href="#">Language Features</a></li>
+        <li><a href="#">Unix/Linux Programming</a></li>
+        <li><a href="#">Source Code</a></li>
+        <li><a href="#">Standard Library</a></li>
+        <li><a href="#">Tips and Tricks</a></li>
+        <li><a href="#">Tools and Libraries</a></li>
+        <li><a href="#">Visual C++</a></li>
+        <li><a href="#">Windows API</a></li>
+      </ul>
+    </div>
+
+    <div class="article-list">
+      <h2>Latest Articles</h2>
+
+      <div class="article">
+        <h3>How to avoid bugs using modern C++ by PVSCoder</h3>
+        <p><strong>Categories:</strong> Tips and Tricks, Standard Library, Language Features, How-To, C++ 11</p>
+        <p><strong>Date:</strong> Sep 16, 2016 | <strong>Updated:</strong> Sep 16, 2016</p>
+        <p><strong>Score:</strong> ⭐⭐⭐⭐☆ (4.3/5 from 919 votes)</p>
+      </div>
+
+      <div class="article">
+        <h3>Learning Computer Programming Terminology by Sean Alvarez</h3>
+        <p><strong>Categories:</strong> How-To</p>
+        <p><strong>Date:</strong> Aug 25, 2016 | <strong>Updated:</strong> Aug 25, 2016</p>
+        <p><strong>Score:</strong> ⭐⭐⭐⭐☆ (3.7/5 from 456 votes)</p>
+      </div>
+
+      <div class="article">
+        <h3>C++ Class for Generate Fibonacci Series by mhcrnl</h3>
+        <p><strong>Categories:</strong> Source Code, C++ 11</p>
+        <p><strong>Date:</strong> Aug 9, 2016 | <strong>Updated:</strong> Aug 9, 2016</p>
+        <p><strong>Score:</strong> ⭐⭐⭐⭐☆ (3.6/5 from 723 votes)</p>
+      </div>
+
+      <div class="article">
+        <h3>C++ Casting by Uk Marine</h3>
+        <p><strong>Categories:</strong> Visual C++, Tips and Tricks, Source Code, How-To</p>
+        <p><strong>Date:</strong> May 15, 2016 | <strong>Updated:</strong> May 16, 2016</p>
+        <p><strong>Score:</strong> ⭐⭐⭐⭐☆ (4.0/5 from 472 votes)</p>
+      </div>
+
+      <div class="pagination">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <span>...</span>
+        <a href="#">11</a>
+        <a href="#">Next</a>
+      </div>
+    </div> <button onclick="display('sectionHome')">Back to Home</button>
+  </div>   
+  <div id="sectionf">
+    <h1>Articles</h1>
+    <div class="article-container">
+      
+      <div class="article">
+        <h3>Beginners</h3>
+        <p>Discussions about C++ programming for beginners</p>
+        <p><strong>Last Active:</strong> "Getter for enum member returns a copy of enum?" on Mar 19, 2025 at 8:02am by <em>TheIdeasMan</em></p>
+      </div>
+
+      <div class="article">
+        <h3>Windows Programming</h3>
+        <p>Win32, MFC, ATL, C++/CLI, .NET ...</p>
+        <p><strong>Last Active:</strong> "Formatted Console Log with Datetime" on Mar 12, 2025 at 9:29pm by <em>seeplus</em></p>
+      </div>
+
+      <div class="article">
+        <h3>UNIX/Linux Programming</h3>
+        <p>Programming C++ for UNIX and Linux</p>
+        <p><strong>Last Active:</strong> "tzdb: cannot locate zone" on Mar 3, 2025 at 2:07am by <em>spistol</em></p>
+      </div>
+
+      <div class="article">
+        <h3>General C++ Programming</h3>
+        <p>Anything about programming in C++</p>
+        <p><strong>Last Active:</strong> "Use C++ 20 with Embarcadero" on Mar 18, 2025 at 9:06am by <em>salem c</em></p>
+      </div>
+
+      <div class="article">
+        <h3>Lounge</h3>
+        <p>Discussions about this website, or other topics not related to C++ programming</p>
+        <p><strong>Last Active:</strong> "I wrote a cron job!" on Mar 15, 2025 at 11:32pm by <em>jonnin</em></p>
+      </div>
+
+      <div class="article">
+        <h3>Jobs</h3>
+        <p>Job offers for C++ programmers.</p>
+        <p><strong>Last Active:</strong> "Jobs" on Apr 18, 2024 at 8:09pm by <em>deleted account xyzzy</em></p>
+      </div>
+
+      <div class="article">
+        <h3>Articles</h3>
+        <p>How-to's and other technical articles</p>
+        <p><strong>Last Active:</strong> "How to Make a Game 2" on Jul 29, 2011 at 12:21pm by <em>anonymous23323124</em></p>
+      </div>
+
+      <div class="article">
+        <h3>Visual C++</h3>
+        <p>Including MFC, ATL, C++/CLI, ...</p>
+      </div>
+
+      <div class="article">
+        <h3>Windows API</h3>
+        <p>Programming Windows using its API</p>
+      </div>
+
+    </div>
+    <button onclick="display('sectionHome')">Go Back</button>
+  </div>
+
+  
+  
+</body>
+</html>
